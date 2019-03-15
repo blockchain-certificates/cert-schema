@@ -172,6 +172,7 @@
     "id",
     "type",
     "name",
-    "url"
+    "url",
+    "email"
   ]
 }
