@@ -246,6 +246,7 @@
       },
       "required": [
         "id",
+        "type",
         "name",
         "description",
         "image",
