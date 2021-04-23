@@ -17,10 +17,6 @@
       "id": "did:example:c276e12ec21ebfeb1f712ebc6f1"
     }
   },
-  "display": {
-    "contentMediaType": "text/html",
-    "content": "<html><body><h1>Some content</h1></body></html>"
-  },
   "proof": {
     "type": "MerkleProof2019",
     "created": "2020-02-19T15:57:05.303127",
