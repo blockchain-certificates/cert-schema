@@ -96,4 +96,4 @@ class ContextUrls:
         return self.CONTEXT_URLS['CHAINED_PROOF_2021_CONTEXT']
 
     def data_integrity_proof_v2(self):
-        return self.CONTEXT_URLS['DATA_INTEGRITY_PROOF_CONTEXT']
+        return self.CONTEXT_URLS['DATA_INTEGRITY_PROOF_V2_CONTEXT']
