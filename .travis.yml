@@ -13,10 +13,11 @@ python:
 install: pip install tox-travis
 script: tox
 after_success:
+#  - npm run semantic-release
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh semantic-release.sh; fi'
   - cd npm
   - npm ci
   - npm run copy:schemas
-  - npm run semantic-release
+  - npm publish
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh ../scripts/automated-update-blockcerts.org.sh; fi' # if no changes (aka npm release), no commit then no PR
   - cd ..
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh semantic-release.sh; fi'
