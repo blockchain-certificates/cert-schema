@@ -4,7 +4,7 @@ import os
 import re
 from copy import deepcopy
 
-import requests
+from urllib.request import urlretrieve
 from pyld import jsonld
 from pyld.jsonld import JsonLdProcessor
 import validators
@@ -166,10 +166,10 @@ def load_document(url):
     """
     result = validators.url(url)
     if result:
-        response = requests.get(
-            url, headers={'Accept': 'application/ld+json, application/json'}
-        )
-        return response.text
+        local_filename, headers = urlretrieve(schema_url)
+        with open(local_filename) as f:
+            content = json.load(f)
+            return content
     raise InvalidUrlError('Could not validate ' + url)
 
 
