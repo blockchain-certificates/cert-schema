@@ -1,9 +1,23 @@
 import os
+import re
 
 from setuptools import setup, find_packages
 
-from cert_schema.__version__ import __version__
-
+VERSION_FILE = os.path.join('cert_schema', '__version__.py')
+__version__ = 'unknown'
+try:
+    verstrline = open(VERSION_FILE, 'rt').read()
+except EnvironmentError as e:
+    print('an error occurred', e)
+    pass # Okay, there is no version file.
+else:
+    VSRE = r"^__version__ = ['\"]([^'\"]*)['\"]"
+    mo = re.search(VSRE, verstrline, re.M)
+    if mo:
+        __version__ = mo.group(1)
+    else:
+        print ("unable to find version in %s" % (VERSION_FILE,))
+        raise RuntimeError("if %s.py exists, it is required to be well-formed" % (VERSION_FILE,))
 
 here = os.path.abspath(os.path.dirname(__file__))
 
