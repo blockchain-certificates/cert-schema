@@ -6,7 +6,8 @@ logging_use_named_masks = false
 major_on_zero = true
 tag_format = "v{version}"
 version_variables = [
-    "cert_schema/__version__.py:__version__"
+    "cert_schema/__version__.py:__version__",
+    'npm/package.json:"version"'
 ]
 build_command = "sh release_package.sh"
 upload_to_pypi = true
