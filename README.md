@@ -9,7 +9,7 @@ This python package allows verification of a Blockchain Certificate against the 
 schemas as a convenience. This is not the same as verifying the contents of a certificate against what is stored
 on the blockchain. See the [cert-verifier-js](https://github.com/blockchain-certificates/cert-verifier-js) project.
 
-*   [Blockcerts JSON Schema](docs/schema-3.0-alpha.md)
+*   [Blockcerts JSON Schema](docs/schema-3.0-beta.md)
 
 ## Example
 
