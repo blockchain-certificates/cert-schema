@@ -22,33 +22,35 @@ class TestSchemaValidator(unittest.TestCase):
                                           '../cert_schema/1.1/certificate-schema-v1-1.json')
         self.assertTrue(valid)
 
-    def test_v1_2_signed(self):
-        with open('../examples/1.2/sample_signed_cert-1.2.json') as data_f:
-            certificate = json.load(data_f)
-            valid = validate_v1_2(certificate)
-            self.assertTrue(valid)
-
-    def test_v1_2_invalid(self):
-        with open('../examples/1.2/sample_invalid_cert-1.2.json') as data_f:
-            certificate = json.load(data_f)
-            try:
-                valid = validate_v1_2(certificate)
-            except BlockcertValidationError as bve:
-                self.assertTrue(True, 'Got validation error, as expected')
-                return
-        self.fail('Did not get expected validation error')
-
-    def test_v1_2_signed_multiple_signers(self):
-        with open('../examples/1.2/sample_signed_cert_multiple_signers-1.2.json') as data_f:
-            certificate = json.load(data_f)
-            valid = validate_v1_2(certificate)
-            self.assertTrue(valid)
-
-    def test_v1_2_unsigned(self):
-        with open('../examples/1.2/sample_unsigned_cert-1.2.json') as data_f:
-            data = json.load(data_f)
-            valid = validate_unsigned_v1_2(data['document'])
-            self.assertTrue(valid)
+    ## comment V1.2 tests as they are currently failing due to unreachable URL. See https://github.com/1EdTech/openbadges-specification/issues/585
+    ## TODO: re-enable if issue is fixed.
+    # def test_v1_2_signed(self):
+    #     with open('../examples/1.2/sample_signed_cert-1.2.json') as data_f:
+    #         certificate = json.load(data_f)
+    #         valid = validate_v1_2(certificate)
+    #         self.assertTrue(valid)
+    # 
+    # def test_v1_2_invalid(self):
+    #     with open('../examples/1.2/sample_invalid_cert-1.2.json') as data_f:
+    #         certificate = json.load(data_f)
+    #         try:
+    #             valid = validate_v1_2(certificate)
+    #         except BlockcertValidationError as bve:
+    #             self.assertTrue(True, 'Got validation error, as expected')
+    #             return
+    #     self.fail('Did not get expected validation error')
+    # 
+    # def test_v1_2_signed_multiple_signers(self):
+    #     with open('../examples/1.2/sample_signed_cert_multiple_signers-1.2.json') as data_f:
+    #         certificate = json.load(data_f)
+    #         valid = validate_v1_2(certificate)
+    #         self.assertTrue(valid)
+    # 
+    # def test_v1_2_unsigned(self):
+    #     with open('../examples/1.2/sample_unsigned_cert-1.2.json') as data_f:
+    #         data = json.load(data_f)
+    #         valid = validate_unsigned_v1_2(data['document'])
+    #         self.assertTrue(valid)
 
     def test_v2_alpha(self):
         with open('../examples/2.0-alpha/sample_valid.json') as data_f:
