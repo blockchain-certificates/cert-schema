@@ -9,7 +9,7 @@ version_variables = [
     "cert_schema/__version__.py:__version__",
     'npm/package.json:"version"'
 ]
-build_command = "sh release_package.sh"
+build_command = ". release_package.sh"
 upload_to_pypi = true
 
 [tool.semantic_release.branches.main]
