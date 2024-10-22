@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v3.7.1 (2024-10-22)
+
+### Bug Fixes
+
+* fix(v3.2): expose v3.2 context and url ([`466d9b0`](https://github.com/blockchain-certificates/cert-schema/commit/466d9b070246a1d2ca958599e1709825dc762c23))
+
+### Unknown
+
+* Merge pull request #79 from blockchain-certificates/chore/fix-ci-semantic-release
+
+fix(v3.2): expose v3.2 context and url ([`d17ad3a`](https://github.com/blockchain-certificates/cert-schema/commit/d17ad3a995fcdd9fdf79abd8d5cae1deef9442ea))
+
+
 ## v3.7.0 (2024-10-22)
 
 ### Chores
@@ -460,19 +473,11 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 ### Bug Fixes
 
-* fix(JsonLd): fix variables ([`6b25d35`](https://github.com/blockchain-certificates/cert-schema/commit/6b25d357e6a1d0826601dbd08094f2492cec0cab))
-
-* fix(Context): fix typo ([`94e9b43`](https://github.com/blockchain-certificates/cert-schema/commit/94e9b43c0a46b596f834ef85dec46e5bdcbf38d2))
-
 * fix(JsonLd): fix preloading URL for blockcert.org ([`af3cc64`](https://github.com/blockchain-certificates/cert-schema/commit/af3cc6404fd8a781bd51094fbb5647352ef67524))
 
 * fix(V3): ensure display value is being hashed ([`dc5f2eb`](https://github.com/blockchain-certificates/cert-schema/commit/dc5f2eb5e93bdf398eaa6acf737b69977924f8ba))
 
 * fix(v3): remove copy paste item ([`51f72d1`](https://github.com/blockchain-certificates/cert-schema/commit/51f72d15062b756809c62e60da1c50ae43f068dc))
-
-* fix(v3): correct w3id path to schema ([`ba9c4f1`](https://github.com/blockchain-certificates/cert-schema/commit/ba9c4f164c21f45c1eb55d9b32837f6746bce8e2))
-
-* fix(v3): properly expose items ([`30d8601`](https://github.com/blockchain-certificates/cert-schema/commit/30d8601ed6f1c6e98fbf26d87b03cf2bfbcba747))
 
 ### Chores
 
@@ -487,12 +492,6 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 * chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
 
 * chore(CI): update python version ([`a5c89f4`](https://github.com/blockchain-certificates/cert-schema/commit/a5c89f484a66e40fb126888cc3b75be8dd4d3fc7))
-
-### Testing
-
-* test(v3): define id as non-relative value ([`3531682`](https://github.com/blockchain-certificates/cert-schema/commit/3531682d768c72bd833b7dc8e9263a5ac33c344d))
-
-* test(All): ensure all tests are run ([`fd87426`](https://github.com/blockchain-certificates/cert-schema/commit/fd87426bd6393e98b98f9421589b93aa6486cc9b))
 
 ### Unknown
 
@@ -515,7 +514,3 @@ fix(v3): remove copy paste item ([`659a375`](https://github.com/blockchain-certi
 * Merge pull request #32 from blockchain-certificates/fix/schema-url
 
 fix(v3): correct w3id path to schema ([`b547b48`](https://github.com/blockchain-certificates/cert-schema/commit/b547b4868dac15e44c0f4d92630cfd0e656f81ff))
-
-* Merge pull request #31 from blockchain-certificates/feat/v3-final
-
-feat(v3): fix v3 tests ([`c94605a`](https://github.com/blockchain-certificates/cert-schema/commit/c94605ac8f67addf443113418046138bf8dbabfe))
