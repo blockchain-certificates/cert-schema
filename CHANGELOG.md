@@ -1,20 +1,115 @@
 # CHANGELOG
 
 
+## v3.7.0 (2024-10-22)
+
+### Chores
+
+* chore(CI): change twine upload prompt place to access env var ([`e8b03cf`](https://github.com/blockchain-certificates/cert-schema/commit/e8b03cf2efe96c96a9b1ceec512197141a17587d))
+
+* chore(CI): fix typo ([`771226f`](https://github.com/blockchain-certificates/cert-schema/commit/771226f8152f91fa8322099a4c4c7200902e29e6))
+
+* chore(CI): attempt reading env variable ([`af480fa`](https://github.com/blockchain-certificates/cert-schema/commit/af480fa164388944ee9222fcff09e8420df450e1))
+
+* chore(CI): attempt reading env variable ([`8050db5`](https://github.com/blockchain-certificates/cert-schema/commit/8050db54f0341c178e99cb61be64d3740bebe163))
+
+* chore(CI): attempt reading env variable ([`f4dcb08`](https://github.com/blockchain-certificates/cert-schema/commit/f4dcb08c92acf1d990e61df623489531283469f1))
+
+* chore(CI): debug 'no such file' error ([`517f2a9`](https://github.com/blockchain-certificates/cert-schema/commit/517f2a9e0a9db9d9f1651ff55a0c335e23194b36))
+
+* chore(CI): debug 'no such file' error ([`e3edcc0`](https://github.com/blockchain-certificates/cert-schema/commit/e3edcc0e5bb9aca9f983028ef35287fef54c9984))
+
+* chore(CI): attempt at fixing semantic release by changing execution context ([`5d47bf7`](https://github.com/blockchain-certificates/cert-schema/commit/5d47bf7aecaa61a13347c9da04b671264180f210))
+
+### Features
+
+* feat(VCv2): remove name and description as handled by VC v2 context ([`70e7065`](https://github.com/blockchain-certificates/cert-schema/commit/70e7065e774c4da2100dd5d3e4515e1646f5ad49))
+
+### Testing
+
+* test(V1.2): disable tests due to unavailable distant endpoint ([`28a3b29`](https://github.com/blockchain-certificates/cert-schema/commit/28a3b29efa9ea51abc52ec9ba147a18caf59beea))
+
+### Unknown
+
+* Merge pull request #78 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): change twine upload prompt place to access env var ([`0e7691b`](https://github.com/blockchain-certificates/cert-schema/commit/0e7691bef6b4128e396b858c44c0093cfc2fe1d7))
+
+* Merge pull request #77 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): fix typo ([`670f866`](https://github.com/blockchain-certificates/cert-schema/commit/670f86661a10cb05f093a5d76a30569d66b2bb3a))
+
+* Merge pull request #76 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): attempt reading env variable ([`ecd7874`](https://github.com/blockchain-certificates/cert-schema/commit/ecd7874a3580793271ebd8917ac27492c3894b8d))
+
+* Merge pull request #75 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): attempt reading env variable ([`7a9b057`](https://github.com/blockchain-certificates/cert-schema/commit/7a9b0570a89f1a8c76c7c6a704dc3e7869461dc4))
+
+* Merge pull request #74 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): attempt reading env variable ([`0cc92b0`](https://github.com/blockchain-certificates/cert-schema/commit/0cc92b0a0092734efc4ad13785d4f5f0e7053b90))
+
+* Merge pull request #73 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): debug 'no such file' error ([`b6eca8b`](https://github.com/blockchain-certificates/cert-schema/commit/b6eca8bcc5243e3ee99c6aa296447466ffdbc469))
+
+* Merge pull request #72 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): debug 'no such file' error ([`c5cbd7b`](https://github.com/blockchain-certificates/cert-schema/commit/c5cbd7b0b093e11d1204f66efda63740bffd4128))
+
+* Merge pull request #71 from blockchain-certificates/chore/fix-ci-semantic-release
+
+chore(CI): attempt at fixing semantic release by changing execution c… ([`00d1431`](https://github.com/blockchain-certificates/cert-schema/commit/00d14310b9afdcfa62f18bc1a1e31aa024ad9c81))
+
+* Merge pull request #70 from blockchain-certificates/feat/vc-v2-name-description
+
+feat(VCv2): remove name and description as handled by VC v2 context ([`234e2eb`](https://github.com/blockchain-certificates/cert-schema/commit/234e2eb98bee7181f1fb0c0a75b90284019e0f60))
+
+
+## v3.6.4 (2024-10-21)
+
+### Bug Fixes
+
+* fix(Contexts): update vc v2 context to latest ([`3e3fefa`](https://github.com/blockchain-certificates/cert-schema/commit/3e3fefac1b14206dd22750ed1d024964a37e14a2))
+
+* fix(NPM): expose package as ESM ([`90f6827`](https://github.com/blockchain-certificates/cert-schema/commit/90f68275e8914d8b63da1afb6a6229e8eaf29cff))
+
+### Chores
+
+* chore(Package): publish v3.6.4 ([`6632cfa`](https://github.com/blockchain-certificates/cert-schema/commit/6632cfa43301bfa260347450a5ff4957e6fa6187))
+
+* chore(CI): fix keyring version - attempt at fixing semantic release ([`7a8e427`](https://github.com/blockchain-certificates/cert-schema/commit/7a8e42784fe81b88fafc7ca32e2811fde5bc7f1b))
+
+* chore(CI): fix twine version - attempt at fixing semantic release ([`085ccfa`](https://github.com/blockchain-certificates/cert-schema/commit/085ccfa80c969bae77da47668ef1d570ca4df02a))
+
+### Unknown
+
+* Merge pull request #69 from blockchain-certificates/fix/npm-esm
+
+chore(Package): publish v3.6.4 ([`c9298cf`](https://github.com/blockchain-certificates/cert-schema/commit/c9298cfba0c3df757192844f905d5c93e6b93a8f))
+
+* Merge pull request #68 from blockchain-certificates/fix/npm-esm
+
+chore(CI): fix keyring version - attempt at fixing semantic release ([`f36d832`](https://github.com/blockchain-certificates/cert-schema/commit/f36d832bc7effad563e51c0d097a1369cf3d2087))
+
+* Merge pull request #67 from blockchain-certificates/fix/npm-esm
+
+chore(CI): fix twine version - attempt at fixing semantic release ([`d97a3f2`](https://github.com/blockchain-certificates/cert-schema/commit/d97a3f22ec3eb43386cb4ff7dcfcdcc415816a74))
+
+* Merge pull request #66 from blockchain-certificates/fix/npm-esm
+
+Fix/npm esm ([`23e04c6`](https://github.com/blockchain-certificates/cert-schema/commit/23e04c6da3d1bba52775e02ec651cfd168a9b227))
+
 
 ## v3.6.3 (2024-03-19)
 
-### Chore
-
-* chore(SemanticRelease): simplify .travis.yml ([`f646418`](https://github.com/blockchain-certificates/cert-schema/commit/f6464189cb6b4b669d0fdeeeb30fc00fee5bb4ed))
+### Chores
 
 * chore(SemanticRelease): correctly set authToken ([`92ea4ca`](https://github.com/blockchain-certificates/cert-schema/commit/92ea4ca3395f16c0691a8d5a9b1307c86592d817))
 
 * chore(SemanticRelease): cleanup code and set npmAuth ([`2b00b21`](https://github.com/blockchain-certificates/cert-schema/commit/2b00b21c0427dfd2cd77bd96e91563612ba792a9))
-
-### Fix
-
-* fix(Context): update VC v2 context ([`2adab90`](https://github.com/blockchain-certificates/cert-schema/commit/2adab902d60345bc96c6ac13b13e2f201571e739))
 
 ### Unknown
 
@@ -22,7 +117,7 @@
 
 Fix/update credential v2 context ([`56ee99f`](https://github.com/blockchain-certificates/cert-schema/commit/56ee99ff18258509c91c40cc246e01302c966073))
 
-* Merge branch &#39;master&#39; into fix/update-credential-v2-context ([`371156e`](https://github.com/blockchain-certificates/cert-schema/commit/371156ed7ce856438e9d02857e4d970f9228d7f4))
+* Merge branch 'master' into fix/update-credential-v2-context ([`371156e`](https://github.com/blockchain-certificates/cert-schema/commit/371156ed7ce856438e9d02857e4d970f9228d7f4))
 
 * Merge pull request #63 from blockchain-certificates/chore/fix-semantic-release
 
@@ -35,25 +130,29 @@ chore(SemanticRelease): cleanup code and set npmAuth ([`d76b0e3`](https://github
 
 ## v3.6.2 (2024-03-08)
 
-### Chore
+### Bug Fixes
+
+* fix(Context): update VC v2 context ([`2adab90`](https://github.com/blockchain-certificates/cert-schema/commit/2adab902d60345bc96c6ac13b13e2f201571e739))
+
+* fix(DataIntegrityProof): correct name for data integrity proof property ([`c2cea4f`](https://github.com/blockchain-certificates/cert-schema/commit/c2cea4fd647b9f8a1aec17f704c2660112c5058c))
+
+### Chores
 
 * chore(SemanticRelease): decommission semantic-release js - move responsibility to python-semantic-release and manually publish ([`a4bec8c`](https://github.com/blockchain-certificates/cert-schema/commit/a4bec8c3d289efd84df82ebefa315806c1071497))
 
+* chore(SemanticRelease): simplify .travis.yml ([`f646418`](https://github.com/blockchain-certificates/cert-schema/commit/f6464189cb6b4b669d0fdeeeb30fc00fee5bb4ed))
+
 * chore(Tox): prevent failure due to accessing cert_schema files before installing deps ([`5091bf5`](https://github.com/blockchain-certificates/cert-schema/commit/5091bf5fca67ab1d7f218e94c83592328b40eced))
 
-* chore(CI): align travis config to cert_issuer&#39;s ([`a9bd524`](https://github.com/blockchain-certificates/cert-schema/commit/a9bd52481b0230a3ce20f46c542fe9068f699469))
+* chore(CI): align travis config to cert_issuer's ([`a9bd524`](https://github.com/blockchain-certificates/cert-schema/commit/a9bd52481b0230a3ce20f46c542fe9068f699469))
 
 * chore(CI): try and force requests install ([`9fc78a5`](https://github.com/blockchain-certificates/cert-schema/commit/9fc78a5e1049dab06a66b3914881b3e8967bc148))
 
 * chore(SemanticRelease): run PRs only against master ([`8dd7fbf`](https://github.com/blockchain-certificates/cert-schema/commit/8dd7fbf0922a1612764ad152e82713235b01451f))
 
-* chore(SemanticRelease): configure python-semantic-release for &gt; v7 ([`6baac50`](https://github.com/blockchain-certificates/cert-schema/commit/6baac5082cd0a05d0f3b3bc00bf85ec3dfc665d2))
+* chore(SemanticRelease): configure python-semantic-release for > v7 ([`6baac50`](https://github.com/blockchain-certificates/cert-schema/commit/6baac5082cd0a05d0f3b3bc00bf85ec3dfc665d2))
 
-### Fix
-
-* fix(DataIntegrityProof): correct name for data integrity proof property ([`c2cea4f`](https://github.com/blockchain-certificates/cert-schema/commit/c2cea4fd647b9f8a1aec17f704c2660112c5058c))
-
-### Refactor
+### Refactoring
 
 * refactor(JsonLdHelpers): use urllib rather than requests ([`5471e6c`](https://github.com/blockchain-certificates/cert-schema/commit/5471e6cb3d467bbaa53d3dbf0bc847d5e198cefb))
 
@@ -63,11 +162,11 @@ chore(SemanticRelease): cleanup code and set npmAuth ([`d76b0e3`](https://github
 
 chore(SemanticRelease): decommission semantic-release js - move respo… ([`79b20ec`](https://github.com/blockchain-certificates/cert-schema/commit/79b20ecdd63dea1289abdf0dfd20456438777414))
 
-* Merge branch &#39;master&#39; of https://github.com/blockchain-certificates/cert-schema ([`110e2db`](https://github.com/blockchain-certificates/cert-schema/commit/110e2dbf6b4166892df42bb370bbdf0037a258b4))
+* Merge branch 'master' of https://github.com/blockchain-certificates/cert-schema ([`110e2db`](https://github.com/blockchain-certificates/cert-schema/commit/110e2dbf6b4166892df42bb370bbdf0037a258b4))
 
 * Merge pull request #60 from blockchain-certificates/chore/fix-semantic-release
 
-chore(SemanticRelease): configure python-semantic-release for &gt; v7 ([`d62cc64`](https://github.com/blockchain-certificates/cert-schema/commit/d62cc6410e5c8ef2f86a760fb79e04ef0d7048ef))
+chore(SemanticRelease): configure python-semantic-release for > v7 ([`d62cc64`](https://github.com/blockchain-certificates/cert-schema/commit/d62cc6410e5c8ef2f86a760fb79e04ef0d7048ef))
 
 * Merge pull request #59 from blockchain-certificates/feat/expose-data-integrity-proof-ctx
 
@@ -76,13 +175,13 @@ fix(DataIntegrityProof): correct name for data integrity proof property ([`6588c
 
 ## v3.6.1 (2024-02-27)
 
-### Chore
-
-* chore(Deps): update pyld version ([`fd71457`](https://github.com/blockchain-certificates/cert-schema/commit/fd714578759dfc9509ebf67daccd0a494754b9c8))
-
-### Fix
+### Bug Fixes
 
 * fix(npm): fix path to credential v2 context ([`93f5fa7`](https://github.com/blockchain-certificates/cert-schema/commit/93f5fa796c918c934715751f2807b2e2c05b17ef))
+
+### Chores
+
+* chore(Deps): update pyld version ([`fd71457`](https://github.com/blockchain-certificates/cert-schema/commit/fd714578759dfc9509ebf67daccd0a494754b9c8))
 
 ### Unknown
 
@@ -93,7 +192,7 @@ Feat/expose data integrity proof ctx ([`96273bc`](https://github.com/blockchain-
 
 ## v3.6.0 (2024-02-14)
 
-### Feature
+### Features
 
 * feat(DataIntegrityProof): support data integrity proof ([`bcfd38c`](https://github.com/blockchain-certificates/cert-schema/commit/bcfd38c677558a8f108641972893b28706fd96b0))
 
@@ -106,13 +205,13 @@ feat(DataIntegrityProof): support data integrity proof ([`2615b85`](https://gith
 
 ## v3.5.1 (2024-01-30)
 
-### Chore
-
-* chore(CI): bump node ([`2db830d`](https://github.com/blockchain-certificates/cert-schema/commit/2db830d3ccc15d7f6c09df8eecbe12c2f126413a))
-
-### Fix
+### Bug Fixes
 
 * fix(VC-V2): expose vc V2 in document loader ([`9928854`](https://github.com/blockchain-certificates/cert-schema/commit/99288540b72bb8aeb1734a25f542f64b748c0d19))
+
+### Chores
+
+* chore(CI): bump node ([`2db830d`](https://github.com/blockchain-certificates/cert-schema/commit/2db830d3ccc15d7f6c09df8eecbe12c2f126413a))
 
 ### Unknown
 
@@ -127,7 +226,7 @@ chore(CI): bump node ([`3125895`](https://github.com/blockchain-certificates/cer
 
 ## v3.5.0 (2024-01-29)
 
-### Feature
+### Features
 
 * feat(VC-V2): provide verifiable credentials v2 ([`17332a2`](https://github.com/blockchain-certificates/cert-schema/commit/17332a2a94dae4a77a3b62749436f13cf438aa11))
 
@@ -142,13 +241,13 @@ Add VC V2 schema and convert to ESM ([`1a2993e`](https://github.com/blockchain-c
 
 ## v3.4.2 (2023-05-17)
 
-### Chore
-
-* chore(CI): bump to python 3.10 ([`3b865db`](https://github.com/blockchain-certificates/cert-schema/commit/3b865db83d913117be0fd4b2650edb0b7ea898fe))
-
-### Fix
+### Bug Fixes
 
 * fix(API): expose document loader function ([`df4422a`](https://github.com/blockchain-certificates/cert-schema/commit/df4422a8a17502f1dad30cf6739e9fccd7836e5a))
+
+### Chores
+
+* chore(CI): bump to python 3.10 ([`3b865db`](https://github.com/blockchain-certificates/cert-schema/commit/3b865db83d913117be0fd4b2650edb0b7ea898fe))
 
 ### Unknown
 
@@ -156,12 +255,12 @@ Add VC V2 schema and convert to ESM ([`1a2993e`](https://github.com/blockchain-c
 
 Fix/expose document loader ([`cdda06f`](https://github.com/blockchain-certificates/cert-schema/commit/cdda06f290459bac471be41c2d12e1033ead4ce0))
 
-* Merge branch &#39;master&#39; of https://github.com/blockchain-certificates/cert-schema ([`d1831ae`](https://github.com/blockchain-certificates/cert-schema/commit/d1831aeac0142f15872fe5798128c76b872d14c5))
+* Merge branch 'master' of https://github.com/blockchain-certificates/cert-schema ([`d1831ae`](https://github.com/blockchain-certificates/cert-schema/commit/d1831aeac0142f15872fe5798128c76b872d14c5))
 
 
 ## v3.4.1 (2023-03-30)
 
-### Fix
+### Bug Fixes
 
 * fix(Schemas): correct path to context ([`4375b57`](https://github.com/blockchain-certificates/cert-schema/commit/4375b5780a5b3f0ee4948038d52d982a431b1a3d))
 
@@ -176,7 +275,7 @@ fix(Schemas): correct path to context ([`90cc814`](https://github.com/blockchain
 
 ## v3.4.0 (2023-03-30)
 
-### Feature
+### Features
 
 * feat(All): trigger new release ([`6bab8b4`](https://github.com/blockchain-certificates/cert-schema/commit/6bab8b424d8baac1a1ba5e2eefa083d6ebd0ace2))
 
@@ -189,7 +288,7 @@ feat(All): trigger new release ([`957714b`](https://github.com/blockchain-certif
 
 ## v3.3.0 (2023-03-30)
 
-### Chore
+### Chores
 
 * chore(CI): debug ([`9507cd6`](https://github.com/blockchain-certificates/cert-schema/commit/9507cd64d8c0e5286fbf5e71112b57b7325a8d79))
 
@@ -211,7 +310,7 @@ feat(All): trigger new release ([`957714b`](https://github.com/blockchain-certif
 
 * docs(Metadata): document metadata property ([`1bbbf87`](https://github.com/blockchain-certificates/cert-schema/commit/1bbbf872d0a8c163a181a0999e164cdb653314b3))
 
-### Feature
+### Features
 
 * feat(StatusList2021): add StatusList2021 context ([`0ef1548`](https://github.com/blockchain-certificates/cert-schema/commit/0ef1548ca184cf4f525e91aca9d08a4f32eb2e9a))
 
@@ -244,7 +343,7 @@ docs(Metadata): document metadata property ([`1d1be91`](https://github.com/block
 
 ## v3.2.1 (2022-06-20)
 
-### Fix
+### Bug Fixes
 
 * fix(MultiSign): reference contexts in js module ([`410e943`](https://github.com/blockchain-certificates/cert-schema/commit/410e94394bd05c4aebbdd1b8309a565fc8cc0041))
 
@@ -257,7 +356,7 @@ fix(MultiSign): reference contexts in js module ([`5b2dc5a`](https://github.com/
 
 ## v3.2.0 (2022-06-20)
 
-### Feature
+### Features
 
 * feat(MultiSign): bump version ([`ab7958d`](https://github.com/blockchain-certificates/cert-schema/commit/ab7958d84d1b8267a4652c26da40e1d0560cfb99))
 
@@ -269,11 +368,11 @@ fix(MultiSign): reference contexts in js module ([`5b2dc5a`](https://github.com/
 
 * feat(MultiSign): split MerkleProof2019 from Blockcerts context, define other required contexts ([`a9c2b85`](https://github.com/blockchain-certificates/cert-schema/commit/a9c2b8586a4c69b6731bd79e530c3920cddec148))
 
-### Refactor
+### Refactoring
 
 * refactor(Test): rename tests to better reflect test case ([`19b1ed4`](https://github.com/blockchain-certificates/cert-schema/commit/19b1ed4be9cf0f961085da7261816275baddcc8b))
 
-### Test
+### Testing
 
 * test(JSONLDNormalize): add proper test check ([`e14ae3b`](https://github.com/blockchain-certificates/cert-schema/commit/e14ae3bc7dd6ea606e9a9dbbe064ed0169ca42b9))
 
@@ -286,7 +385,7 @@ Feat/multisign ([`3aba646`](https://github.com/blockchain-certificates/cert-sche
 
 ## v3.1.0 (2022-04-08)
 
-### Chore
+### Chores
 
 * chore(Version): bump version ([`1d10f7b`](https://github.com/blockchain-certificates/cert-schema/commit/1d10f7b9fa647af6234e2c7b4ef27f8f8d3b2a33))
 
@@ -298,7 +397,7 @@ Feat/multisign ([`3aba646`](https://github.com/blockchain-certificates/cert-sche
 
 * chore(Publish): automatically publish to blockcerts.org ([`a09ce57`](https://github.com/blockchain-certificates/cert-schema/commit/a09ce577f593a7ee281b904bd1dc5b738081d4bf))
 
-### Feature
+### Features
 
 * feat(ContextUrls): consume class where relevant ([`54599f6`](https://github.com/blockchain-certificates/cert-schema/commit/54599f6308fcb6072c277e7b4308746392eb83ec))
 
@@ -325,7 +424,7 @@ chore(Publish): automatically publish to blockcerts.org ([`be31b0e`](https://git
 
 ## v3.0.7 (2022-04-05)
 
-### Fix
+### Bug Fixes
 
 * fix(Context): fix typo in export instruction ([`88cd797`](https://github.com/blockchain-certificates/cert-schema/commit/88cd7974e379e03682be569c2cd4f008fbe250ce))
 
@@ -338,13 +437,13 @@ fix(Context): fix typo in export instruction ([`58ffc14`](https://github.com/blo
 
 ## v3.0.6 (2022-04-05)
 
-### Chore
-
-* chore(Version): align py version to npm ([`4b68fb4`](https://github.com/blockchain-certificates/cert-schema/commit/4b68fb44642143ea3ae39aa9980c78ad5fc05c74))
-
-### Fix
+### Bug Fixes
 
 * fix(Context): expose context urls to py package ([`24ad5c3`](https://github.com/blockchain-certificates/cert-schema/commit/24ad5c3b89ff53e957c0a6a368476007e11f09a8))
+
+### Chores
+
+* chore(Version): align py version to npm ([`4b68fb4`](https://github.com/blockchain-certificates/cert-schema/commit/4b68fb44642143ea3ae39aa9980c78ad5fc05c74))
 
 ### Unknown
 
@@ -359,78 +458,11 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 ## v3.0.5 (2022-04-05)
 
-### Chore
-
-* chore(CI): update repository address ([`f20cdee`](https://github.com/blockchain-certificates/cert-schema/commit/f20cdee859dfa4aa2f91a60128d693890ce4b6f1))
-
-* chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
-
-* chore(CI): fix node version ([`a8b9769`](https://github.com/blockchain-certificates/cert-schema/commit/a8b976928c90efcfbc9a6c5d6555e2252a8fe15f))
-
-* chore(CI): manually install semantic-release ([`d18683b`](https://github.com/blockchain-certificates/cert-schema/commit/d18683ba516228d23166930b6902335e960d9937))
-
-* chore(Version): bump py version ([`47ae086`](https://github.com/blockchain-certificates/cert-schema/commit/47ae08696140f8ad23fa7965d272aea6cbdc29c7))
-
-* chore(CI): configure semantic release for NPM ([`240d1ef`](https://github.com/blockchain-certificates/cert-schema/commit/240d1efb3a50ad2dda2349e9f7812ccf885b34de))
-
-### Fix
+### Bug Fixes
 
 * fix(JsonLd): fix variables ([`6b25d35`](https://github.com/blockchain-certificates/cert-schema/commit/6b25d357e6a1d0826601dbd08094f2492cec0cab))
 
 * fix(Context): fix typo ([`94e9b43`](https://github.com/blockchain-certificates/cert-schema/commit/94e9b43c0a46b596f834ef85dec46e5bdcbf38d2))
-
-### Style
-
-* style(All): remove trailing print ([`e175923`](https://github.com/blockchain-certificates/cert-schema/commit/e1759236b11ece67b9bbe42ea18ee57687ecb7ed))
-
-### Unknown
-
-* Merge pull request #36 from blockchain-certificates/chore/npm-package
-
-Chore/npm package ([`ffd9f51`](https://github.com/blockchain-certificates/cert-schema/commit/ffd9f51bb343410d716e44413ba1d6bdf02cc672))
-
-
-## v3.0.4 (2022-04-04)
-
-### Chore
-
-* chore(Release): update release steps ([`67a4e11`](https://github.com/blockchain-certificates/cert-schema/commit/67a4e1180dfa6fa70d7c8e2a48300576f70f6332))
-
-* chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
-
-* chore(CI): update python version ([`a5c89f4`](https://github.com/blockchain-certificates/cert-schema/commit/a5c89f484a66e40fb126888cc3b75be8dd4d3fc7))
-
-* chore(NPM): prepare structure for npm package ([`183e1f0`](https://github.com/blockchain-certificates/cert-schema/commit/183e1f0d54b47360756bb21a59b24c5af24bdcce))
-
-### Feature
-
-* feat(NPM): create shared data between py and js to centralize source of truth ([`624dcde`](https://github.com/blockchain-certificates/cert-schema/commit/624dcde2d7c1f58a81755c2a2b4efe18639b1497))
-
-* feat(v3): better support of hashing ([`7be37c8`](https://github.com/blockchain-certificates/cert-schema/commit/7be37c8709e070289e89a7c0cbeed57f4c82dcfd))
-
-* feat(v3): fix v3 tests ([`6455276`](https://github.com/blockchain-certificates/cert-schema/commit/6455276fd17f41e17ece5beebdea24550a9a52a1))
-
-* feat(v3): prepare code for v3 ([`173a052`](https://github.com/blockchain-certificates/cert-schema/commit/173a052fbc9cb9c4be3615ae7b10755349f496ed))
-
-* feat(v3): remove hashed property as it does not support a proper use case ([`07839d3`](https://github.com/blockchain-certificates/cert-schema/commit/07839d34c3cbb5cc24fa1272d4c97c09620c8b96))
-
-* feat(V3): define v3 properties and versionning ([`9863915`](https://github.com/blockchain-certificates/cert-schema/commit/9863915024f3f511f2b6cd17b635309204c68124))
-
-* feat(v3b): bump version ([`4234e97`](https://github.com/blockchain-certificates/cert-schema/commit/4234e97b36a2a1ed86073ad69dcb539925ad1472))
-
-* feat(v3b): define more keys for blockcerts model ([`24d125a`](https://github.com/blockchain-certificates/cert-schema/commit/24d125a9d1f4f54835acc40c7dfc7de1c63de19b))
-
-* feat(v3b): prepare package for release ([`43e21d1`](https://github.com/blockchain-certificates/cert-schema/commit/43e21d1f5937b4081391a932bfb148b02bf68e66))
-
-* feat(v3b): reference v3 beta addresses ([`1e7f11f`](https://github.com/blockchain-certificates/cert-schema/commit/1e7f11f982ffd70280f8d9d1506b585f9edd16d8))
-
-* feat(v3b): list VC contexts ([`7fc11b2`](https://github.com/blockchain-certificates/cert-schema/commit/7fc11b2c27308135ab98a1c6ecd127fb7f65fa28))
-
-* feat(V3Beta): normalize display property ([`c4e5f18`](https://github.com/blockchain-certificates/cert-schema/commit/c4e5f18f378d5470e9ccee590c62d9bb1fa023b8))
-
-* feat(Metadata): define metadata object ([`05e5976`](https://github.com/blockchain-certificates/cert-schema/commit/05e59762baa3fc2591e6c976d2e00f27e34016cd))
-
-### Fix
 
 * fix(JsonLd): fix preloading URL for blockcert.org ([`af3cc64`](https://github.com/blockchain-certificates/cert-schema/commit/af3cc6404fd8a781bd51094fbb5647352ef67524))
 
@@ -442,21 +474,31 @@ Chore/npm package ([`ffd9f51`](https://github.com/blockchain-certificates/cert-s
 
 * fix(v3): properly expose items ([`30d8601`](https://github.com/blockchain-certificates/cert-schema/commit/30d8601ed6f1c6e98fbf26d87b03cf2bfbcba747))
 
-* fix(Context): change copy paste error ([`9d37aad`](https://github.com/blockchain-certificates/cert-schema/commit/9d37aad9bd666d5bcc1fc61f1b22fdd675290af2))
+### Chores
 
-### Test
+* chore(CI): update repository address ([`f20cdee`](https://github.com/blockchain-certificates/cert-schema/commit/f20cdee859dfa4aa2f91a60128d693890ce4b6f1))
+
+* chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
+
+* chore(CI): fix node version ([`a8b9769`](https://github.com/blockchain-certificates/cert-schema/commit/a8b976928c90efcfbc9a6c5d6555e2252a8fe15f))
+
+* chore(CI): manually install semantic-release ([`d18683b`](https://github.com/blockchain-certificates/cert-schema/commit/d18683ba516228d23166930b6902335e960d9937))
+
+* chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
+
+* chore(CI): update python version ([`a5c89f4`](https://github.com/blockchain-certificates/cert-schema/commit/a5c89f484a66e40fb126888cc3b75be8dd4d3fc7))
+
+### Testing
 
 * test(v3): define id as non-relative value ([`3531682`](https://github.com/blockchain-certificates/cert-schema/commit/3531682d768c72bd833b7dc8e9263a5ac33c344d))
 
 * test(All): ensure all tests are run ([`fd87426`](https://github.com/blockchain-certificates/cert-schema/commit/fd87426bd6393e98b98f9421589b93aa6486cc9b))
 
-* test(V3): add custom contexts tests ([`968368f`](https://github.com/blockchain-certificates/cert-schema/commit/968368f017be5b8b0cd0b64ea53cb92fe22b77da))
-
-* test(3.0-beta): updated contexts ([`085b226`](https://github.com/blockchain-certificates/cert-schema/commit/085b226b7a5a821e29d5e51233fba075c5a6212d))
-
 ### Unknown
 
-* Merge branch &#39;master&#39; of https://github.com/blockchain-certificates/cert-schema into chore/npm-package ([`4d39ba5`](https://github.com/blockchain-certificates/cert-schema/commit/4d39ba54d5d7d15abfb0060b3fe68b87f0a0f9a0))
+* Merge pull request #36 from blockchain-certificates/chore/npm-package
+
+Chore/npm package ([`ffd9f51`](https://github.com/blockchain-certificates/cert-schema/commit/ffd9f51bb343410d716e44413ba1d6bdf02cc672))
 
 * Merge pull request #35 from blockchain-certificates/test/hashing
 
@@ -477,91 +519,3 @@ fix(v3): correct w3id path to schema ([`b547b48`](https://github.com/blockchain-
 * Merge pull request #31 from blockchain-certificates/feat/v3-final
 
 feat(v3): fix v3 tests ([`c94605a`](https://github.com/blockchain-certificates/cert-schema/commit/c94605ac8f67addf443113418046138bf8dbabfe))
-
-* Merge pull request #30 from blockchain-certificates/feat/v3-final
-
-feat(v3): prepare code for v3 ([`4ddd495`](https://github.com/blockchain-certificates/cert-schema/commit/4ddd495245921b3e248c5cc404ead5d7ee3c1f89))
-
-* Merge pull request #29 from blockchain-certificates/feat/v3
-
-feat(V3): define v3 properties and versionning ([`37f10df`](https://github.com/blockchain-certificates/cert-schema/commit/37f10df50428c2db19255e4f598099dadb7b468b))
-
-* Merge pull request #28 from blockchain-certificates/feat/v3-beta
-
-feat(v3b): define more keys for blockcerts model ([`5300471`](https://github.com/blockchain-certificates/cert-schema/commit/5300471b8de5a4acc4663af660392dea54a679d9))
-
-* Merge branch &#39;master&#39; of https://github.com/blockchain-certificates/cert-schema into feat/v3-beta ([`f9fecef`](https://github.com/blockchain-certificates/cert-schema/commit/f9fecefb9f29a07c03af4ea16e53ffbb855d135e))
-
-* Merge pull request #26 from blockchain-certificates/feat/v3-beta
-
-feat(v3b): prepare package for release ([`550f828`](https://github.com/blockchain-certificates/cert-schema/commit/550f82808b7415ff44b83aa1ef0690e5a633f6f8))
-
-* Revving to b3 ([`bf2d142`](https://github.com/blockchain-certificates/cert-schema/commit/bf2d1428095289104642f92a3e8ba6a7566b533a))
-
-* Merge pull request #23 from blockchain-certificates/feat/v3-beta
-
-Feat/v3 beta ([`e602103`](https://github.com/blockchain-certificates/cert-schema/commit/e602103dc856ee7527226fd7370d9435ce201a48))
-
-* Merge pull request #25 from bonn1112/feat/v3-beta
-
-add v3-beta json file ([`bbc0da6`](https://github.com/blockchain-certificates/cert-schema/commit/bbc0da63e9e0f690bed356f78b622536817eb800))
-
-* add v3-beta json file ([`9da6f24`](https://github.com/blockchain-certificates/cert-schema/commit/9da6f24fea335738b3538392d0a910840b80c262))
-
-* Merge pull request #24 from bonn1112/feat/v3-beta
-
-add import validater ([`f735f24`](https://github.com/blockchain-certificates/cert-schema/commit/f735f241585bdb2dcbc76eee5f6c7243edbe63c4))
-
-* import validater ([`926bfff`](https://github.com/blockchain-certificates/cert-schema/commit/926bfffa45d0ce033e9708dcfa64592c4af73929))
-
-* doc(3.0-beta): added doc ([`b154dd5`](https://github.com/blockchain-certificates/cert-schema/commit/b154dd5b902c4ca3341e99277a9ccade519f7a83))
-
-* Merge pull request #22 from blockchain-certificates/update-merkleproof2019-link
-
-update link ([`96c3e42`](https://github.com/blockchain-certificates/cert-schema/commit/96c3e423ce0dec046c7d080fe384dacd51316efa))
-
-* update link ([`1d4dac8`](https://github.com/blockchain-certificates/cert-schema/commit/1d4dac8f44af90c241080a71f4eec44492865fe4))
-
-* Revving version to republish PyPI package. ([`fc2652a`](https://github.com/blockchain-certificates/cert-schema/commit/fc2652a9426061edfd605aaf487fc098dbcb8528))
-
-* Merge pull request #20 from blockchain-certificates/v3
-
-Export V3 contexts/schemas &amp; V3 cert validation additions ([`30dbc38`](https://github.com/blockchain-certificates/cert-schema/commit/30dbc380b141b5e9829a613fb28c82f32e241bff))
-
-* Adding option to ignore proof when validating an unsigned cert ([`1ef93e6`](https://github.com/blockchain-certificates/cert-schema/commit/1ef93e6ca11026891c8d0a3483a41f3bffc1c64a))
-
-* Adding Verifiable Credential context to library exports ([`35be736`](https://github.com/blockchain-certificates/cert-schema/commit/35be7362f1411dd3b9a146d4408369515ccc86ca))
-
-* Merge pull request #19 from blockchain-certificates/v3
-
-Export V3 contexts/schemas to be used in a library ([`2f90254`](https://github.com/blockchain-certificates/cert-schema/commit/2f90254ca58212e4392881a9d5f6db0b1bed7d91))
-
-* Export V3 contexts/schemas to be used in a library ([`66a7789`](https://github.com/blockchain-certificates/cert-schema/commit/66a77895ba10e18987fec0f5257332366bc2c3a6))
-
-* Merge pull request #18 from blockchain-certificates/v3
-
-Adding more MerkleProof2019 properties to context ([`c9e58e9`](https://github.com/blockchain-certificates/cert-schema/commit/c9e58e945d64044798b0ed09602c181915e9e46c))
-
-* Adding more MerkleProof2019 properties to context ([`73dc356`](https://github.com/blockchain-certificates/cert-schema/commit/73dc356041580d72efacd0d2d7f6c09e77f604dd))
-
-* Merge pull request #17 from blockchain-certificates/v3
-
-Update bc v3 context to correct some security contexts ([`1e6d079`](https://github.com/blockchain-certificates/cert-schema/commit/1e6d0791f02f87cdbe60eedd7f638e87e586770b))
-
-* Update bc v3 context to correct some security contexts ([`6617519`](https://github.com/blockchain-certificates/cert-schema/commit/6617519e8c001f60eaa6e48bffd91e3378d625e9))
-
-* Merge pull request #16 from blockchain-certificates/v3
-
-Fixing 3.0-alpha schema &amp; examples ([`3f6dcfc`](https://github.com/blockchain-certificates/cert-schema/commit/3f6dcfc7f46bc6b500a5339ff67e9dc072f028cd))
-
-* Bump to 3.0.0a3 ([`b449168`](https://github.com/blockchain-certificates/cert-schema/commit/b4491682d3b6fe5533e5ada179fabf8ad68e9269))
-
-* Schema updates for blockcerts type of verifiable credentials ([`59e1f82`](https://github.com/blockchain-certificates/cert-schema/commit/59e1f826d085205150f608ecdebe25a5a6459ab8))
-
-* Merge pull request #12 from blockchain-certificates/v3
-
-Fixing v3-alpha schema ([`b3d9f93`](https://github.com/blockchain-certificates/cert-schema/commit/b3d9f937313ba9eba6c4bb2eb59d6206d80aacc4))
-
-* Bump v3-alpha version ([`9d58742`](https://github.com/blockchain-certificates/cert-schema/commit/9d5874238283b80e8e5278febf1b04211d7e2fa7))
-
-* Update bbba8553-8ec1-445f-82c9-a57251dd731c.json ([`f608739`](https://github.com/blockchain-certificates/cert-schema/commit/f60873943f1d975346ff40519bacd2473ec3dac0))
