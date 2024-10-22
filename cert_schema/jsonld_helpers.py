@@ -71,6 +71,7 @@ JSON_LD_CONTEXT_V3_0_BETA = os.path.join(BASE_DIR, '3.0-beta/context.json')
 
 JSON_LD_CONTEXT_V3_0 = os.path.join(BASE_DIR, '3.0/context.json')
 JSON_LD_CONTEXT_V3_1 = os.path.join(BASE_DIR, '3.1/context.json')
+JSON_LD_CONTEXT_V3_2 = os.path.join(BASE_DIR, '3.2/context.json')
 MERKLE_PROOF_2019_LD_CONTEXT = os.path.join(BASE_DIR, '3.1/merkleProof2019Context.json')
 CHAINED_PROOF_2021_LD_CONTEXT = os.path.join(BASE_DIR, '3.1/chainedProof2021Context.json')
 STATUS_LIST_2021_LD_CONTEXT = os.path.join(BASE_DIR, '3.1/statusList2021Context.json')
@@ -150,6 +151,12 @@ with open(JSON_LD_CONTEXT_V3_1) as data_file:
     PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1_canonical()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1_blockcerts_org()] = bc_context
+
+with open(JSON_LD_CONTEXT_V3_2) as data_file:
+    bc_context = json.load(data_file)
+    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2()] = bc_context
+    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2_canonical()] = bc_context
+    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2_blockcerts_org()] = bc_context
 
 def to_loader_response(data, url):
     return {
