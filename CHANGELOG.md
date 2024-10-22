@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v3.7.2 (2024-10-22)
+
+### Bug Fixes
+
+* fix(v3.2): provide more exposure to context files ([`ae1ba43`](https://github.com/blockchain-certificates/cert-schema/commit/ae1ba43bcbbfc70bb84c0610f07b41efb205ada3))
+
+### Unknown
+
+* Merge pull request #81 from blockchain-certificates/chore/fix-ci-semantic-release
+
+fix(v3.2): provide more exposure to context files ([`93c1c20`](https://github.com/blockchain-certificates/cert-schema/commit/93c1c20d0b887f9208a014f69da32a592b7c8853))
+
+
 ## v3.7.1 (2024-10-22)
 
 ### Bug Fixes
@@ -473,11 +486,7 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 ### Bug Fixes
 
-* fix(JsonLd): fix preloading URL for blockcert.org ([`af3cc64`](https://github.com/blockchain-certificates/cert-schema/commit/af3cc6404fd8a781bd51094fbb5647352ef67524))
-
 * fix(V3): ensure display value is being hashed ([`dc5f2eb`](https://github.com/blockchain-certificates/cert-schema/commit/dc5f2eb5e93bdf398eaa6acf737b69977924f8ba))
-
-* fix(v3): remove copy paste item ([`51f72d1`](https://github.com/blockchain-certificates/cert-schema/commit/51f72d15062b756809c62e60da1c50ae43f068dc))
 
 ### Chores
 
@@ -486,8 +495,6 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 * chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
 
 * chore(CI): fix node version ([`a8b9769`](https://github.com/blockchain-certificates/cert-schema/commit/a8b976928c90efcfbc9a6c5d6555e2252a8fe15f))
-
-* chore(CI): manually install semantic-release ([`d18683b`](https://github.com/blockchain-certificates/cert-schema/commit/d18683ba516228d23166930b6902335e960d9937))
 
 * chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
 
@@ -510,7 +517,3 @@ fix(V3): ensure display value is being hashed ([`bb68ca1`](https://github.com/bl
 * Merge pull request #33 from blockchain-certificates/lemoustachiste-patch-1
 
 fix(v3): remove copy paste item ([`659a375`](https://github.com/blockchain-certificates/cert-schema/commit/659a375d79669e4fa616740d0ea35756162522aa))
-
-* Merge pull request #32 from blockchain-certificates/fix/schema-url
-
-fix(v3): correct w3id path to schema ([`b547b48`](https://github.com/blockchain-certificates/cert-schema/commit/b547b4868dac15e44c0f4d92630cfd0e656f81ff))
