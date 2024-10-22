@@ -71,6 +71,22 @@ class ContextUrls:
             self.v3_1_blockcerts_org()
         ]
 
+    def v3_2(self):
+        return self.CONTEXT_URLS['BLOCKCERTS_V3_2_CONTEXT']
+
+    def v3_2_canonical(self):
+        return self.CONTEXT_URLS['BLOCKCERTS_V3_2_CANONICAL_CONTEXT']
+
+    def v3_2_blockcerts_org(self):
+        return self.CONTEXT_URLS['BLOCKCERTS_ORG_V3_2_CONTEXT']
+
+    def v3_2_all(self):
+        return [
+            self.v3_2(),
+            self.v3_2_canonical(),
+            self.v3_2_blockcerts_org()
+        ]
+
     def open_badge(self):
         return self.CONTEXT_URLS['OPEN_BADGES_V2_CONTEXT']
 
