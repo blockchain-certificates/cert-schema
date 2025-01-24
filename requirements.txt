@@ -2,3 +2,5 @@ pyld>=2.0.3
 jsonschema>=2.6.0
 tox>=3.0.0
 validators>=0.12.1
+setuptools>=75.8.0
+
