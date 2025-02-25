@@ -1,6 +1,6 @@
 {
   "name": "@blockcerts/schemas",
-  "version": "3.7.0",
+  "version": "3.7.2",
   "repository": "https://github.com/blockchain-certificates/cert-schema",
   "description": "One source of truth for Blockcerts schemas",
   "main": "index.mjs",

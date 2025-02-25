@@ -13,5 +13,5 @@ python:
 install: pip install tox-travis
 script: tox
 after_success:
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh semantic-release.sh; fi'
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh release_npm_package.sh; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then . ./semantic-release.sh; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then . ./release_npm_package.sh; fi'
