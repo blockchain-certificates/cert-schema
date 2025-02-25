@@ -10,6 +10,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "BlockcertsCredential": "bc:BlockcertsCredential",
+    "BlockcertsIssuerProfile": "bc:BlockcertsIssuerProfile",
     "introductionUrl": { "@id": "bc:introductionUrl", "@type": "@id" },
     "metadata": "bc:metadata",
     "display": {
