@@ -1,6 +1,55 @@
 # CHANGELOG
 
 
+## v3.8.0 (2025-02-26)
+
+### Bug Fixes
+
+* fix: update setuptools for PEP 625 ([`b7bbd40`](https://github.com/blockchain-certificates/cert-schema/commit/b7bbd40392b037b406bca9a7af2081a257b6c5b5))
+
+### Chores
+
+* chore(CI): debug semantic-release issue ([`ccd0383`](https://github.com/blockchain-certificates/cert-schema/commit/ccd038304c9ea411f7cf253c539458501c4556a9))
+
+* chore(CI): correct command ([`9e5eba1`](https://github.com/blockchain-certificates/cert-schema/commit/9e5eba134e9d61699d8539de5a4a72f046a70043))
+
+* chore(CI): verbose semantic release ([`41da38c`](https://github.com/blockchain-certificates/cert-schema/commit/41da38c7374989d0433d41cb683b04af9eb6727b))
+
+### Features
+
+* feat(VC): remove unused definitions ([`a87f6e4`](https://github.com/blockchain-certificates/cert-schema/commit/a87f6e4a87e52ef57b8f6f70a53e00af796f618f))
+
+* feat(VC): remove redundant definitions from blockcerts context as defined by vc v2 ([`268e05a`](https://github.com/blockchain-certificates/cert-schema/commit/268e05ae6486a332a26af1996283e28fcf76617e))
+
+* feat(Blockcerts): add BlockcertsIssuerProfile ([`f9e0e60`](https://github.com/blockchain-certificates/cert-schema/commit/f9e0e6053447118a4039fca79aab07ee438c0149))
+
+* feat(VC): update context to latest version ([`79c2249`](https://github.com/blockchain-certificates/cert-schema/commit/79c2249a1eb809a83458ea6098b0803a918f82b2))
+
+### Unknown
+
+* Merge pull request #88 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+chore(CI): debug semantic-release issue ([`f5b86ce`](https://github.com/blockchain-certificates/cert-schema/commit/f5b86ceb4254c494d08824c4fb232eceef310bfb))
+
+* Merge pull request #87 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+chore(CI): correct command ([`f53e6a2`](https://github.com/blockchain-certificates/cert-schema/commit/f53e6a2d83ddf89714bfa64d63b69bc347f2e200))
+
+* Merge pull request #86 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+chore(CI): verbose semantic release ([`3c5ae8a`](https://github.com/blockchain-certificates/cert-schema/commit/3c5ae8aa19517919b5fecbee6f3662821e43437f))
+
+* Merge pull request #85 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+Feat/blockcerts issuer profile ([`8887688`](https://github.com/blockchain-certificates/cert-schema/commit/88876887b46f5947f5627f04358585a3c1815965))
+
+* Merge branch 'master' of https://github.com/blockchain-certificates/cert-schema ([`ccc0493`](https://github.com/blockchain-certificates/cert-schema/commit/ccc0493a1a6e2cbcf5b9c6f4172f3c7d5a83e670))
+
+* Merge pull request #82 from blockchain-certificates/lp_changes
+
+fix: update setuptools for PEP 625 ([`e516bed`](https://github.com/blockchain-certificates/cert-schema/commit/e516bed2de50a6e928f1d2e64d7612e1edfd850f))
+
+
 ## v3.7.2 (2024-10-22)
 
 ### Bug Fixes
@@ -486,7 +535,11 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 ### Bug Fixes
 
+* fix(JsonLd): fix preloading URL for blockcert.org ([`af3cc64`](https://github.com/blockchain-certificates/cert-schema/commit/af3cc6404fd8a781bd51094fbb5647352ef67524))
+
 * fix(V3): ensure display value is being hashed ([`dc5f2eb`](https://github.com/blockchain-certificates/cert-schema/commit/dc5f2eb5e93bdf398eaa6acf737b69977924f8ba))
+
+* fix(v3): remove copy paste item ([`51f72d1`](https://github.com/blockchain-certificates/cert-schema/commit/51f72d15062b756809c62e60da1c50ae43f068dc))
 
 ### Chores
 
@@ -495,6 +548,8 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 * chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
 
 * chore(CI): fix node version ([`a8b9769`](https://github.com/blockchain-certificates/cert-schema/commit/a8b976928c90efcfbc9a6c5d6555e2252a8fe15f))
+
+* chore(CI): manually install semantic-release ([`d18683b`](https://github.com/blockchain-certificates/cert-schema/commit/d18683ba516228d23166930b6902335e960d9937))
 
 * chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
 
@@ -517,3 +572,7 @@ fix(V3): ensure display value is being hashed ([`bb68ca1`](https://github.com/bl
 * Merge pull request #33 from blockchain-certificates/lemoustachiste-patch-1
 
 fix(v3): remove copy paste item ([`659a375`](https://github.com/blockchain-certificates/cert-schema/commit/659a375d79669e4fa616740d0ea35756162522aa))
+
+* Merge pull request #32 from blockchain-certificates/fix/schema-url
+
+fix(v3): correct w3id path to schema ([`b547b48`](https://github.com/blockchain-certificates/cert-schema/commit/b547b4868dac15e44c0f4d92630cfd0e656f81ff))
