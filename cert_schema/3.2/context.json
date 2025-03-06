@@ -22,10 +22,16 @@
     },
 
     "email": { "@id": "schema:email" },
-    "publicKey": { "@id": "sec:publicKey" },
+    "publicKey": {
+      "@context": {
+        "created": { "@id":  "bc:created" }
+      },
+      "@id": "sec:publicKey"
+    },
     "url": { "@id": "schema:url" },
     "image": { "@id": "schema:image" },
     "criteria": { "@id": "schema:criteria" },
-    "claim": { "@id": "schema:claim" }
+    "claim": { "@id": "schema:claim" },
+    "revocationList": { "@id": "bc:revocationList" }
   }
 }
