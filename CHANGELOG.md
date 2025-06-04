@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v3.9.1 (2025-06-04)
+
+### Bug Fixes
+
+* fix(helpers): fix unknown var ([`77e742c`](https://github.com/blockchain-certificates/cert-schema/commit/77e742c90cfdaa6804a3bafde6ca8b837a60d040))
+
+### Unknown
+
+* Merge pull request #91 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+fix(helpers): fix unknown var ([`797ade9`](https://github.com/blockchain-certificates/cert-schema/commit/797ade9d407348b4ac9412decc002c266ab1edf6))
+
+
 ## v3.9.0 (2025-03-06)
 
 ### Features
@@ -546,21 +559,13 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 ## v3.0.5 (2022-04-05)
 
-### Bug Fixes
-
-* fix(V3): ensure display value is being hashed ([`dc5f2eb`](https://github.com/blockchain-certificates/cert-schema/commit/dc5f2eb5e93bdf398eaa6acf737b69977924f8ba))
-
 ### Chores
 
 * chore(CI): update repository address ([`f20cdee`](https://github.com/blockchain-certificates/cert-schema/commit/f20cdee859dfa4aa2f91a60128d693890ce4b6f1))
 
 * chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
 
-* chore(CI): fix node version ([`a8b9769`](https://github.com/blockchain-certificates/cert-schema/commit/a8b976928c90efcfbc9a6c5d6555e2252a8fe15f))
-
 * chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
-
-* chore(CI): update python version ([`a5c89f4`](https://github.com/blockchain-certificates/cert-schema/commit/a5c89f484a66e40fb126888cc3b75be8dd4d3fc7))
 
 ### Unknown
 
@@ -575,7 +580,3 @@ Test/hashing ([`81de83f`](https://github.com/blockchain-certificates/cert-schema
 * Merge pull request #34 from blockchain-certificates/fix/v3-display
 
 fix(V3): ensure display value is being hashed ([`bb68ca1`](https://github.com/blockchain-certificates/cert-schema/commit/bb68ca150dee691816869077c95a4dd9bc353d4e))
-
-* Merge pull request #33 from blockchain-certificates/lemoustachiste-patch-1
-
-fix(v3): remove copy paste item ([`659a375`](https://github.com/blockchain-certificates/cert-schema/commit/659a375d79669e4fa616740d0ea35756162522aa))
