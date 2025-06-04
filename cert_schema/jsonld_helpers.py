@@ -173,7 +173,7 @@ def load_document(url):
     """
     result = validators.url(url)
     if result:
-        local_filename, headers = urlretrieve(schema_url)
+        local_filename, headers = urlretrieve(url)
         with open(local_filename) as f:
             content = json.load(f)
             return content
