@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v3.9.2 (2025-07-21)
+
+### Bug Fixes
+
+* fix(Node22): change assert to with ([`690b3b8`](https://github.com/blockchain-certificates/cert-schema/commit/690b3b8e2c2c3340c04608239e078099fb84cbbd))
+
+### Unknown
+
+* Merge pull request #92 from blockchain-certificates/feat/blockcerts-issuer-profile
+
+fix(Node22): change assert to with ([`60eb863`](https://github.com/blockchain-certificates/cert-schema/commit/60eb863f5f8c1aa79500d1371c503747aacf53a7))
+
+
 ## v3.9.1 (2025-06-04)
 
 ### Bug Fixes
@@ -563,10 +576,6 @@ chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockcha
 
 * chore(CI): update repository address ([`f20cdee`](https://github.com/blockchain-certificates/cert-schema/commit/f20cdee859dfa4aa2f91a60128d693890ce4b6f1))
 
-* chore(CI): install and run node ([`c854d61`](https://github.com/blockchain-certificates/cert-schema/commit/c854d6160d2c8ed78a90dd0af1c70b6fc92d2fa3))
-
-* chore(Version): bump version ([`df5082f`](https://github.com/blockchain-certificates/cert-schema/commit/df5082f3cc4cf900fadb8e0eae4b60ccc84c278f))
-
 ### Unknown
 
 * Merge pull request #36 from blockchain-certificates/chore/npm-package
@@ -576,7 +585,3 @@ Chore/npm package ([`ffd9f51`](https://github.com/blockchain-certificates/cert-s
 * Merge pull request #35 from blockchain-certificates/test/hashing
 
 Test/hashing ([`81de83f`](https://github.com/blockchain-certificates/cert-schema/commit/81de83fc1eaf0c7cf328a54c9ec341c3211a71cd))
-
-* Merge pull request #34 from blockchain-certificates/fix/v3-display
-
-fix(V3): ensure display value is being hashed ([`bb68ca1`](https://github.com/blockchain-certificates/cert-schema/commit/bb68ca150dee691816869077c95a4dd9bc353d4e))
