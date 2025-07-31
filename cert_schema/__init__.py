@@ -1,6 +1,7 @@
 
 from cert_schema.jsonld_helpers import jsonld_document_loader, normalize_jsonld, extend_preloaded_context, \
     preloaded_context_document_loader, get_context_digests
+from cert_schema.digests import compute_digest_multibase, compute_digest_sri
 from cert_schema.schema_validator import validate_unsigned_v1_2, validate_v1_2, validate_v2, validate_v2_1,\
     validate_v3
 from cert_schema.context_urls import ContextUrls

@@ -61,6 +61,10 @@ class TestJsonldHelpers(unittest.TestCase):
         expected = {
             'digestSRI': {
                 'sha384': 'l/HrjlBCNWyAX91hr6LFV2Y3heB5Tcr6IeE4/Tje8YyzYBM8IhqjHWiWpr8+ZbYU'
+            },
+            'digestMultibase': {
+                'sha256': 'uEiBZlVztZpfWHgPyslVv6-UwirFoQoRvW1htfx963sknNA'
             }
         }
-        self.assertEqual(digests, expected)
+        self.assertEqual(digests['digestSRI']['sha384'], expected['digestSRI']['sha384'])
+        self.assertEqual(digests['digestMultibase']['sha256'], expected['digestMultibase']['sha256'])
