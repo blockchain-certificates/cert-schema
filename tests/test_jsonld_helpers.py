@@ -2,7 +2,7 @@ import json
 import unittest
 
 from cert_schema import BlockcertValidationError
-from cert_schema import normalize_jsonld, extend_preloaded_context
+from cert_schema import normalize_jsonld, extend_preloaded_context, get_context_digests
 
 class TestJsonldHelpers(unittest.TestCase):
     def test_v2_unmapped_fields(self):
@@ -55,3 +55,16 @@ class TestJsonldHelpers(unittest.TestCase):
                     extend_preloaded_context('https://w3id.org/security/suites/ed25519-2020/v1', cred_context)
                     normalized = normalize_jsonld(certificate, detect_unmapped_fields=True)
                     self.assertEqual(normalized,  assertion)
+
+    def test_get_preloaded_digests(self):
+        digests = get_context_digests('https://www.w3.org/ns/credentials/v2')
+        expected = {
+            'digestSRI': {
+                'sha384': 'l/HrjlBCNWyAX91hr6LFV2Y3heB5Tcr6IeE4/Tje8YyzYBM8IhqjHWiWpr8+ZbYU'
+            },
+            'digestMultibase': {
+                'sha256': 'uEiBZlVztZpfWHgPyslVv6-UwirFoQoRvW1htfx963sknNA'
+            }
+        }
+        self.assertEqual(digests['digestSRI']['sha384'], expected['digestSRI']['sha384'])
+        self.assertEqual(digests['digestMultibase']['sha256'], expected['digestMultibase']['sha256'])

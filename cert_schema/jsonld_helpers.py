@@ -11,6 +11,7 @@ import validators
 
 from cert_schema.errors import *
 from cert_schema.context_urls import ContextUrls
+from cert_schema.digests import compute_digest_sri, compute_digest_multibase
 
 try:
     from urllib.request import urlopen
@@ -81,82 +82,201 @@ VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V1 = os.path.join(BASE_DIR, '3.0/credentia
 VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V2 = os.path.join(BASE_DIR, '3.2/credential_v2.json')
 
 PRELOADED_CONTEXTS = {}
+PRELOADED_DIGESTS = {}
 
-with open(OBI_JSON_LD_CONTEXT_V2) as data_file:
-        obi_context = json.load(data_file)
-        PRELOADED_CONTEXTS[ContextUrlsInstance.open_badge()] = obi_context
-        PRELOADED_CONTEXTS[ContextUrlsInstance.open_badge_canonical()] = obi_context
+with open(OBI_JSON_LD_CONTEXT_V2, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.open_badge(), ContextUrlsInstance.open_badge_canonical()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
 
-with open(VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V1) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.verifiable_credential_v1()] = cred_context
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
 
-with open(VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V2) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.verifiable_credential_v2()] = cred_context
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
 
-with open(MERKLE_PROOF_2019_LD_CONTEXT) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.merkle_proof_2019()] = cred_context
+with open(VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V1, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.verifiable_credential_v1()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
 
-with open(CHAINED_PROOF_2021_LD_CONTEXT) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.chained_proof_2021()] = cred_context
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
 
-with open(STATUS_LIST_2021_LD_CONTEXT) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.status_list_2021()] = cred_context
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
 
-with open(DATA_INTEGRITY_PROOF_LD_CONTEXT) as data_file:
-    cred_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.data_integrity_proof_v2()] = cred_context
+with open(VERIFIABLE_CREDENTIAL_JSON_LD_CONTEXT_V2, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.verifiable_credential_v2()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
 
-with open(JSON_LD_CONTEXT_V2_0_ALPHA) as data_file:
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(MERKLE_PROOF_2019_LD_CONTEXT, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.merkle_proof_2019()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(CHAINED_PROOF_2021_LD_CONTEXT, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.chained_proof_2021()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(STATUS_LIST_2021_LD_CONTEXT, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.status_list_2021()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(DATA_INTEGRITY_PROOF_LD_CONTEXT, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.data_integrity_proof_v2()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(JSON_LD_CONTEXT_V2_0_ALPHA, 'r', encoding='utf-8') as data_file:
     bc_context = json.load(data_file)
     PRELOADED_CONTEXTS[BLOCKCERTS_V2_ALPHA_CONTEXT] = bc_context
     PRELOADED_CONTEXTS[BLOCKCERTS_ORG_V2_ALPHA_CONTEXT] = bc_context
 
-with open(JSON_LD_CONTEXT_V2_0) as data_file:
+with open(JSON_LD_CONTEXT_V2_0, 'r', encoding='utf-8') as data_file:
+    # no support for digest
     bc_context = json.load(data_file)
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2_blockcerts_org()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2_canonical()] = bc_context
 
-with open(JSON_LD_CONTEXT_V2_1) as data_file:
+with open(JSON_LD_CONTEXT_V2_1, 'r', encoding='utf-8') as data_file:
+    # no support for digest
     bc_context = json.load(data_file)
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2_1()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2_1_blockcerts_org()] = bc_context
     PRELOADED_CONTEXTS[ContextUrlsInstance.v2_1_canonical()] = bc_context
 
-with open(JSON_LD_CONTEXT_V3_0_ALPHA) as data_file:
+with open(JSON_LD_CONTEXT_V3_0_ALPHA, 'r', encoding='utf-8') as data_file:
+    # no support for digest
     bc_context = json.load(data_file)
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_ALPHA_CONTEXT] = bc_context
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_ORG_ALPHA_CONTEXT] = bc_context
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_ALPHA_CANONICAL_CONTEXT] = bc_context
 
-with open(JSON_LD_CONTEXT_V3_0_BETA) as data_file:
+with open(JSON_LD_CONTEXT_V3_0_BETA, 'r', encoding='utf-8') as data_file:
+    # no support for digest
     bc_context = json.load(data_file)
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_BETA_CONTEXT] = bc_context
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_ORG_BETA_CONTEXT] = bc_context
     PRELOADED_CONTEXTS[BLOCKCERTS_V3_BETA_CANONICAL_CONTEXT] = bc_context
 
-with open(JSON_LD_CONTEXT_V3_0) as data_file:
-    bc_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_canonical()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_blockcerts_org()] = bc_context
+with open(JSON_LD_CONTEXT_V3_0, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.v3(), ContextUrlsInstance.v3_canonical(), ContextUrlsInstance.v3_blockcerts_org()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
 
-with open(JSON_LD_CONTEXT_V3_1) as data_file:
-    bc_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1_canonical()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_1_blockcerts_org()] = bc_context
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
 
-with open(JSON_LD_CONTEXT_V3_2) as data_file:
-    bc_context = json.load(data_file)
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2_canonical()] = bc_context
-    PRELOADED_CONTEXTS[ContextUrlsInstance.v3_2_blockcerts_org()] = bc_context
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(JSON_LD_CONTEXT_V3_1, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.v3_1(), ContextUrlsInstance.v3_1_canonical(), ContextUrlsInstance.v3_1_blockcerts_org()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
+with open(JSON_LD_CONTEXT_V3_2, 'r', encoding='utf-8') as data_file:
+    raw_content = data_file.read()
+    sri_384 = compute_digest_sri(raw_content, 'sha384')
+    multibase_256 = compute_digest_multibase(raw_content, 'sha256')
+    contexts_url = [ContextUrlsInstance.v3_2(), ContextUrlsInstance.v3_2_canonical(), ContextUrlsInstance.v3_2_blockcerts_org()]
+    for ctx_url in contexts_url:
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestSRI'] = sri_384
+        PRELOADED_DIGESTS.setdefault(ctx_url, {})['digestMultibase'] = multibase_256
+
+    # Rewind file pointer before json.load() since read() exhausted it
+    data_file.seek(0)
+    context_data = json.load(data_file)
+
+    for ctx_url in contexts_url:
+        PRELOADED_CONTEXTS[ctx_url] = context_data
+
 
 def to_loader_response(data, url):
     return {
@@ -173,11 +293,18 @@ def load_document(url):
     """
     result = validators.url(url)
     if result:
-        local_filename, headers = urlretrieve(url)
+        local_filename = urlretrieve(url)
         with open(local_filename) as f:
             content = json.load(f)
             return content
     raise InvalidUrlError('Could not validate ' + url)
+
+
+def load_raw_document(url):
+    # loads the raw document with all the whitespaces kept in place
+    local_filename = urlretrieve(url)
+    with open(local_filename, 'r', encoding='utf-8') as f:
+        return f.read()
 
 
 def jsonld_document_loader(url):
@@ -190,10 +317,12 @@ def jsonld_document_loader(url):
     data = load_document(url)
     return to_loader_response(data, url)
 
+
 # use this method prior to calling normalize_jsonld if you need to pass a specific context for normalization
 def extend_preloaded_context(url, context):
     PRELOADED_CONTEXTS[url] = context
     pass
+
 
 def preloaded_context_document_loader(url, override_cache=False):
     if url in PRELOADED_CONTEXTS:
@@ -201,6 +330,10 @@ def preloaded_context_document_loader(url, override_cache=False):
         return to_loader_response(context, url)
     else:
         return jsonld_document_loader(url)
+
+
+def get_context_digests(url):
+    return PRELOADED_DIGESTS[url]
 
 
 def compact_with_json_ld_context(input_json, document_loader=preloaded_context_document_loader):
