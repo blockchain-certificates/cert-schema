@@ -1,11 +1,22 @@
 # CHANGELOG
 
 
+## v3.10.0 (2025-07-31)
+
+### Features
+
+* feat(DigestMultibase): provide digestMultibase property for locally stored contexts ([`9530069`](https://github.com/blockchain-certificates/cert-schema/commit/95300691658030c0cef05ba9eb2240a30e253043))
+
+### Unknown
+
+* Merge pull request #93 from blockchain-certificates/feat/related_resources_digests
+
+Feat/related resources digests ([`af94d0e`](https://github.com/blockchain-certificates/cert-schema/commit/af94d0e94d93faacc7c7ed2b7607477299994824))
+
+* Merge branch 'master' of https://github.com/blockchain-certificates/cert-schema into feat/blockcerts-issuer-profile ([`8b50338`](https://github.com/blockchain-certificates/cert-schema/commit/8b5033884fe7a369b5030c82837518a0197f6f4c))
+
+
 ## v3.9.2 (2025-07-21)
-
-### Bug Fixes
-
-* fix(Node22): change assert to with ([`690b3b8`](https://github.com/blockchain-certificates/cert-schema/commit/690b3b8e2c2c3340c04608239e078099fb84cbbd))
 
 ### Unknown
 
@@ -16,10 +27,6 @@ fix(Node22): change assert to with ([`60eb863`](https://github.com/blockchain-ce
 
 ## v3.9.1 (2025-06-04)
 
-### Bug Fixes
-
-* fix(helpers): fix unknown var ([`77e742c`](https://github.com/blockchain-certificates/cert-schema/commit/77e742c90cfdaa6804a3bafde6ca8b837a60d040))
-
 ### Unknown
 
 * Merge pull request #91 from blockchain-certificates/feat/blockcerts-issuer-profile
@@ -28,10 +35,6 @@ fix(helpers): fix unknown var ([`797ade9`](https://github.com/blockchain-certifi
 
 
 ## v3.9.0 (2025-03-06)
-
-### Features
-
-* feat(Context): maintain some legacy issuer profile definitions ([`37a5006`](https://github.com/blockchain-certificates/cert-schema/commit/37a5006941987ae5abdf47d47e6efb9fa1d42e5b))
 
 ### Unknown
 
@@ -44,6 +47,10 @@ feat(Context): maintain some legacy issuer profile definitions ([`03483bf`](http
 
 ### Bug Fixes
 
+* fix(Node22): change assert to with ([`690b3b8`](https://github.com/blockchain-certificates/cert-schema/commit/690b3b8e2c2c3340c04608239e078099fb84cbbd))
+
+* fix(helpers): fix unknown var ([`77e742c`](https://github.com/blockchain-certificates/cert-schema/commit/77e742c90cfdaa6804a3bafde6ca8b837a60d040))
+
 * fix: update setuptools for PEP 625 ([`b7bbd40`](https://github.com/blockchain-certificates/cert-schema/commit/b7bbd40392b037b406bca9a7af2081a257b6c5b5))
 
 ### Chores
@@ -55,6 +62,10 @@ feat(Context): maintain some legacy issuer profile definitions ([`03483bf`](http
 * chore(CI): verbose semantic release ([`41da38c`](https://github.com/blockchain-certificates/cert-schema/commit/41da38c7374989d0433d41cb683b04af9eb6727b))
 
 ### Features
+
+* feat(DigestSRI): provide digestSRI property for locally stored contexts ([`006d166`](https://github.com/blockchain-certificates/cert-schema/commit/006d16696768d3d43c28c94935e1a4875f2aca23))
+
+* feat(Context): maintain some legacy issuer profile definitions ([`37a5006`](https://github.com/blockchain-certificates/cert-schema/commit/37a5006941987ae5abdf47d47e6efb9fa1d42e5b))
 
 * feat(VC): remove unused definitions ([`a87f6e4`](https://github.com/blockchain-certificates/cert-schema/commit/a87f6e4a87e52ef57b8f6f70a53e00af796f618f))
 
@@ -480,8 +491,6 @@ fix(MultiSign): reference contexts in js module ([`5b2dc5a`](https://github.com/
 
 * feat(v3.1): introduce 3.1 concern ([`748ee8a`](https://github.com/blockchain-certificates/cert-schema/commit/748ee8af3b6c1abf82f80fbbd666b4a2a52ea765))
 
-* feat(MultiSign): split MerkleProof2019 from Blockcerts context, define other required contexts ([`a9c2b85`](https://github.com/blockchain-certificates/cert-schema/commit/a9c2b8586a4c69b6731bd79e530c3920cddec148))
-
 ### Refactoring
 
 * refactor(Test): rename tests to better reflect test case ([`19b1ed4`](https://github.com/blockchain-certificates/cert-schema/commit/19b1ed4be9cf0f961085da7261816275baddcc8b))
@@ -555,10 +564,6 @@ fix(Context): fix typo in export instruction ([`58ffc14`](https://github.com/blo
 
 * fix(Context): expose context urls to py package ([`24ad5c3`](https://github.com/blockchain-certificates/cert-schema/commit/24ad5c3b89ff53e957c0a6a368476007e11f09a8))
 
-### Chores
-
-* chore(Version): align py version to npm ([`4b68fb4`](https://github.com/blockchain-certificates/cert-schema/commit/4b68fb44642143ea3ae39aa9980c78ad5fc05c74))
-
 ### Unknown
 
 * Merge pull request #38 from blockchain-certificates/fix/context-urls
@@ -568,20 +573,3 @@ fix(Context): expose context urls to py package ([`7fd3406`](https://github.com/
 * Merge pull request #37 from blockchain-certificates/chore/npm-package
 
 chore(Version): align py version to npm ([`11d7e4b`](https://github.com/blockchain-certificates/cert-schema/commit/11d7e4b75f23765ee1e63011eb82cfcc9881dbd6))
-
-
-## v3.0.5 (2022-04-05)
-
-### Chores
-
-* chore(CI): update repository address ([`f20cdee`](https://github.com/blockchain-certificates/cert-schema/commit/f20cdee859dfa4aa2f91a60128d693890ce4b6f1))
-
-### Unknown
-
-* Merge pull request #36 from blockchain-certificates/chore/npm-package
-
-Chore/npm package ([`ffd9f51`](https://github.com/blockchain-certificates/cert-schema/commit/ffd9f51bb343410d716e44413ba1d6bdf02cc672))
-
-* Merge pull request #35 from blockchain-certificates/test/hashing
-
-Test/hashing ([`81de83f`](https://github.com/blockchain-certificates/cert-schema/commit/81de83fc1eaf0c7cf328a54c9ec341c3211a71cd))
