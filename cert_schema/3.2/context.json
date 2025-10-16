@@ -32,6 +32,7 @@
     "image": { "@id": "schema:image" },
     "criteria": { "@id": "schema:criteria" },
     "claim": { "@id": "schema:claim" },
-    "revocationList": { "@id": "bc:revocationList" }
+    "revocationList": { "@id": "bc:revocationList" },
+    "nonce": { "@id": "sec:nonce" }
   }
 }
